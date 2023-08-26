@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+</head>
+<body  class="container">
+<div class="row">
+    <div class="col-md-4" style="margin-top:10px">
+        <div class="jumbotron">
+            <h1>Customer Info</h1>
+            <p th:text="'Name: ' +  ${customer.name}" />
+            <p th:text="'Age: ' +  ${customer.age}" />
+            <p th:text="'Street: ' +  ${customer.address}" />
+            <a href="/form" class="btn btn-primary" role="button">Add Customer</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
